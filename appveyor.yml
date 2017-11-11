@@ -2,7 +2,7 @@ environment:
   ANDROID_HOME: "C:\\android-sdk-windows"
   ANDROID_NDK_HOME: "C:\\android-sdk-windows\\ndk-bundle"
   JAVA_HOME: "C:\\Program Files\\Java\\jdk1.8.0"
-  ANDROID_TOOLS_URL: "https://dl.google.com/android/repository/tools_r25.2.3-windows.zip"
+  ANDROID_TOOLS_URL: "https://dl.google.com/android/repository/platform-tools-latest-windows.zip"
   MSVC_HOME: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community"
 
 os: Visual Studio 2017
@@ -33,8 +33,6 @@ install:
   - ps: 'Add-Content -Value "`n84831b9409646a918e30573bab4c9c91346d8abd`n504667f4c0de7af1a06de9f4b1727b84351f2910" -Path $env:ANDROID_HOME\licenses\android-sdk-preview-license -Encoding ASCII'
   - '%ANDROID_HOME%\tools\bin\sdkmanager.bat tools'
   - '%ANDROID_HOME%\tools\bin\sdkmanager.bat platform-tools'
-  - '%ANDROID_HOME%\tools\bin\sdkmanager.bat build-tools;25.0.0'
-  - '%ANDROID_HOME%\tools\bin\sdkmanager.bat platforms;android-25'
+  - '%ANDROID_HOME%\tools\bin\sdkmanager.bat build-tools;26.0.2'
+  - '%ANDROID_HOME%\tools\bin\sdkmanager.bat platforms;android-26'
   - '%ANDROID_HOME%\tools\bin\sdkmanager.bat extras;android;m2repository'
-  - '%ANDROID_HOME%\tools\bin\sdkmanager.bat --channel=1 ndk-bundle'
-  - '%ANDROID_HOME%\tools\bin\sdkmanager.bat cmake;3.6.4111459'
