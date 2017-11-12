@@ -23,7 +23,7 @@ build:
 init:
   # Download the Android SDK
   - appveyor DownloadFile %ANDROID_TOOLS_URL% -FileName android-tools.zip
-  - 7z x android-tools.zip -o "%TMP_ANDROID_TOOLS_FOLDER%" > nul
+  - 7z x android-tools.zip -o"%TMP_ANDROID_TOOLS_FOLDER%" > nul
 
   # Work around gradle bug https://github.com/gradle/gradle/issues/929
   - set PATH=C:\Program Files (x86)\Windows Kits\8.1\bin\x86;%PATH%
