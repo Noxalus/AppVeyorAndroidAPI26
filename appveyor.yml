@@ -38,3 +38,4 @@ install:
   - '%TMP_ANDROID_TOOLS_FOLDER%\tools\bin\sdkmanager.bat build-tools;26.0.2 --sdk_root=%ANDROID_HOME%'
   - '%TMP_ANDROID_TOOLS_FOLDER%\tools\bin\sdkmanager.bat platforms;android-26 --sdk_root=%ANDROID_HOME%'
   - '%TMP_ANDROID_TOOLS_FOLDER%\tools\bin\sdkmanager.bat extras;android;m2repository --sdk_root=%ANDROID_HOME%'
+  - '%TMP_ANDROID_TOOLS_FOLDER%\tools\bin\sdkmanager.bat --list --sdk_root=%ANDROID_HOME%'
